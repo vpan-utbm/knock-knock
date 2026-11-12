@@ -1,0 +1,260 @@
+/* HumanProof: the Tables of the Law, Sinai at dawn. No script, no third-party request: fonts are self-hosted (SIL OFL). */
+
+@font-face { font-family: "Cinzel"; src: url("fonts/Cinzel.ttf") format("truetype"); font-weight: 400 900; font-display: swap; }
+@font-face { font-family: "EB Garamond"; src: url("fonts/EBGaramond.ttf") format("truetype"); font-weight: 400 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "EB Garamond"; src: url("fonts/EBGaramond-Italic.ttf") format("truetype"); font-weight: 400 800; font-style: italic; font-display: swap; }
+
+:root {
+  --sand: #fbf3e2;
+  --sand-deep: #f1dfba;
+  --ink: #3a2816;
+  --ink-soft: #5e4630;
+  --bronze: #7a4512;
+  --bronze-hi: #a8661f;
+  --terracotta: #8a3a17;
+  --carved: #8b1e1e;
+  --stone-hi: #f1eee7;
+  --stone: #d3cdc0;
+  --stone-lo: #ada595;
+  --stone-ink: #2b2620;
+  --stone-soft: #4d463c;
+  --roman: "Cinzel", "Trajan Pro", Georgia, serif;
+  --book: "EB Garamond", Garamond, Georgia, serif;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--sand); }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--book);
+  font-size: 1.2rem;
+  line-height: 1.65;
+  background: linear-gradient(var(--sand) 40%, var(--sand-deep));
+}
+
+a { color: var(--terracotta); text-underline-offset: 0.2em; }
+a:hover { color: #5c230b; }
+a:focus-visible { outline: 2px solid var(--terracotta); outline-offset: 3px; border-radius: 2px; }
+
+/* read by screen readers, not shown (the carved numeral is decorative) */
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* ---- Sinai at dawn: light from above, rays, the mountain ---- */
+
+.sinai {
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 1rem 0;
+  text-align: center;
+  background:
+    radial-gradient(ellipse 42% 52% at 50% 36%, rgba(255, 252, 240, 0.97), rgba(255, 238, 196, 0.6) 48%, transparent 76%),
+    repeating-conic-gradient(from -90deg at 50% 36%, rgba(232, 176, 92, 0.22) 0deg 3deg, transparent 3deg 9deg),
+    linear-gradient(#efcf94, #f7e5bf 55%, #f6e3bb);
+}
+
+.lang {
+  max-width: 62rem;
+  margin: 0 auto 1.6rem;
+  text-align: right;
+  font-family: var(--roman);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--bronze);
+}
+.lang [aria-current] { color: var(--ink); }
+
+.kicker {
+  margin: 0 0 0.4rem;
+  font-family: var(--roman);
+  font-weight: 700;
+  font-size: clamp(0.8rem, 2.6vw, 1rem);
+  letter-spacing: 0.32em;
+  color: var(--bronze);
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--roman);
+  font-weight: 900;
+  font-size: clamp(2.7rem, 11vw, 5.6rem);
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  color: #5a2c0e;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.7), 0 0 32px rgba(255, 236, 190, 0.9);
+}
+
+.tagline {
+  margin: 0.5rem 0 0.6rem;
+  font-style: italic;
+  font-size: clamp(1.7rem, 6vw, 2.6rem);
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.subtitle { margin: 0 auto 1.1rem; max-width: 28rem; font-style: italic; color: var(--ink-soft); }
+
+.slogan {
+  margin: 0 auto;
+  max-width: 34rem;
+  font-family: var(--roman);
+  font-size: clamp(0.85rem, 2.6vw, 1.02rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--terracotta);
+}
+
+.mountain { display: block; width: calc(100% + 2rem); height: clamp(6rem, 18vw, 11rem); margin: 1.8rem -1rem 0; }
+
+/* ---- Sections ---- */
+
+main { max-width: 62rem; margin: 0 auto; padding: 0 1rem 2rem; }
+
+section { margin: 0 auto 4rem; }
+
+h2 {
+  margin: 0 0 1.4rem;
+  text-align: center;
+  font-family: var(--roman);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  letter-spacing: 0.06em;
+  color: var(--terracotta);
+}
+h2::before, h2::after { content: "\25C6"; font-size: 0.45em; vertical-align: middle; color: var(--bronze-hi); margin: 0 0.8em; }
+
+.prose { max-width: 40rem; margin: 0 auto; }
+.prose p { margin: 0 0 1rem; }
+
+.lettrine::first-letter {
+  float: left;
+  font-family: var(--roman);
+  font-weight: 900;
+  font-size: 3.6em;
+  line-height: 0.85;
+  padding: 0.04em 0.12em 0 0;
+  color: var(--terracotta);
+}
+
+.proclaim { margin: 1.6rem auto 0; text-align: center; font-family: var(--roman); font-weight: 700; letter-spacing: 0.04em; color: var(--terracotta); }
+
+/* ---- The Tables of the Law, standing on the mountain ---- */
+
+.tables { position: relative; margin-top: clamp(-6rem, -10vw, -3rem); }
+
+.tablets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.6rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.tablet {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1.6rem 2rem;
+  color: var(--stone-ink);
+  background:
+    radial-gradient(circle at 24% 12%, rgba(255, 255, 255, 0.55), transparent 40%),
+    radial-gradient(circle at 80% 86%, rgba(0, 0, 0, 0.1), transparent 46%),
+    linear-gradient(165deg, var(--stone-hi), var(--stone) 48%, var(--stone-lo));
+  border-radius: 50% 50% 0.7rem 0.7rem / 7.5rem 7.5rem 0.7rem 0.7rem;
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.4),
+    inset 0 -10px 22px rgba(0, 0, 0, 0.16),
+    0 24px 50px rgba(90, 50, 15, 0.35),
+    0 0 60px rgba(255, 230, 170, 0.6);
+}
+
+.tablet ol { list-style: none; margin: 0; padding: 0; }
+
+.tablet li {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  column-gap: 0.7rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid rgba(60, 50, 35, 0.2);
+}
+.tablet li:first-child { border-top: 0; padding-top: 0; }
+
+.num, .law, .gloss-line { text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65), 0 -1px 0 rgba(0, 0, 0, 0.14); }
+
+.num {
+  grid-row: span 2;
+  align-self: start;
+  font-family: var(--roman);
+  font-weight: 900;
+  font-size: 1.7rem;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--carved);
+}
+
+.law { font-family: var(--roman); font-weight: 700; font-size: 1.04rem; line-height: 1.4; letter-spacing: 0.02em; }
+
+.gloss-line { font-size: 1.05rem; line-height: 1.45; color: var(--stone-soft); }
+
+.seal {
+  display: grid;
+  place-items: center;
+  width: 4.6rem;
+  height: 4.6rem;
+  margin: auto auto 0;
+  border-radius: 50%;
+  font-family: var(--roman);
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+  color: #fff4dc;
+  background: radial-gradient(circle at 35% 30%, #d9a457, #9c6a2a 58%, #6b4318);
+  box-shadow: 0 3px 8px rgba(60, 35, 10, 0.4), inset 0 -3px 6px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.35);
+}
+
+/* ---- The mechanism: three steles ---- */
+
+.steles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.3rem;
+  max-width: 56rem;
+  margin: 0 auto 1.6rem;
+}
+
+.stele {
+  padding: 1.4rem 1.3rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(#f6ead2, #ecdab6);
+  border: 1px solid #cfa86e;
+  border-top: 4px solid var(--terracotta);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 24px rgba(90, 50, 15, 0.14);
+}
+.stele h3 { margin: 0 0 0.5rem; font-family: var(--roman); font-weight: 700; font-size: 1.05rem; letter-spacing: 0.05em; color: var(--terracotta); }
+.stele p { margin: 0; font-size: 1.08rem; line-height: 1.5; }
+
+/* ---- The call ---- */
+
+.decree { max-width: 34rem; margin: 1.4rem auto 0; display: grid; grid-template-columns: auto 1fr; gap: 0.6rem 1.2rem; align-items: baseline; }
+.decree dt { font-family: var(--roman); font-weight: 700; letter-spacing: 0.06em; color: var(--terracotta); text-align: right; }
+.decree dd { margin: 0; }
+
+/* ---- Colophon ---- */
+
+.colophon { max-width: 40rem; margin: 0 auto; padding: 2.4rem 1rem 3rem; text-align: center; border-top: 1px solid rgba(138, 58, 23, 0.35); }
+.maxim { margin: 0 0 1rem; font-family: var(--roman); font-weight: 700; font-size: 1.15rem; letter-spacing: 0.03em; color: var(--terracotta); }
+.signature { margin: 0; font-style: italic; font-size: 2rem; color: var(--ink); }
+.date { margin: 0.2rem 0 1.6rem; font-family: var(--roman); font-size: 0.85rem; letter-spacing: 0.12em; color: var(--ink-soft); }
+.links { margin: 0 0 1rem; }
+.fine { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
+
+@media (max-width: 30rem) {
+  body { font-size: 1.1rem; }
+  .tablet { padding: 4.4rem 1.2rem 1.8rem; }
+  .decree { grid-template-columns: 1fr; gap: 0.1rem; }
+  .decree dt { text-align: left; margin-top: 0.6rem; }
+}
