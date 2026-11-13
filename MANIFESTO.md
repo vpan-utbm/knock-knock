@@ -125,6 +125,11 @@ Two things have changed:
   devices without any law having required it. And it is arriving through legislation: age verification in
   France, labelling of AI-generated content in Europe.
 
+History has already taught this lesson. E-mail was born in 1982 with no way to prove who sent it. Proof only
+arrived in 2007 (DKIM), then in 2015 (DMARC), after billions of spam and phishing messages. Today everyone is
+turning towards more AI, and almost no one towards proof that a human is there. One day we will look back and
+say: we should have proved there was a human before opening the floodgates.
+
 If proof of humanity becomes mandatory, the only question is **in what form**: an anonymous attestation that
 keeps biometrics inside the keyboard, or a unique identifier that tracks every text. That choice is being made
 now, as the first designs appear. A privacy-respecting design that exists before the law has every chance of
@@ -162,5 +167,9 @@ This manifesto claims nothing. **Ideas belong to those who bring them to life.**
 - Apple Platform Security, *Magic Keyboard with Touch ID*:
   https://support.apple.com/guide/security/magic-keyboard-with-touch-id-secf60513daa/web
 - ISO/IEC 30107, presentation attack detection (liveness detection in biometrics).
+- J. Postel, *Simple Mail Transfer Protocol*, RFC 821 (1982): https://www.rfc-editor.org/rfc/rfc821
+- *DomainKeys Identified Mail (DKIM) Signatures*, RFC 4871 (2007): https://www.rfc-editor.org/rfc/rfc4871
+- *Domain-based Message Authentication, Reporting, and Conformance (DMARC)*, RFC 7489 (2015):
+  https://www.rfc-editor.org/rfc/rfc7489
 - FIDO Alliance, batch attestation of authenticators.
 - Trusted Computing Group, *Direct Anonymous Attestation* (anonymous attestation of TPM 2.0 chips).

@@ -48,7 +48,10 @@ FR = dict(
            "Leur limite commune : ce qu’on rejoue devant le capteur, un écran ou un haut-parleur, passe pour du réel. "
            "Le clavier y échappe mieux, il faut un doigt sur la touche. On commence donc par lui.",
     h_call="L’Appel",
-    call="Toutes les tentatives passées sont tombées sur la vie privée. Si la preuve d’humanité devient obligatoire, "
+    call="Le courrier électronique est né en 1982 sans preuve d’expéditeur ; il a fallu attendre 2007, et des milliards "
+         "de spams, pour l’ajouter. Ne refaisons pas l’erreur avec l’IA : prouvons qu’un humain est là avant d’ouvrir "
+         "les vannes. "
+         "Toutes les tentatives passées sont tombées sur la vie privée. Si la preuve d’humanité devient obligatoire, "
          "qu’elle le devienne sous cette forme, et pas sous une autre.",
     decree=[("Fabricants", "construisez-le."), ("Plateformes", "acceptez l’anonymat."),
             ("Législateurs", "protégez ceux qui ne peuvent pas taper.")],
@@ -102,7 +105,9 @@ EN = dict(
            "Their common limit: whatever is replayed in front of the sensor, a screen or a loudspeaker, passes for real. "
            "The keyboard escapes it better: a finger must press the key. So we start there.",
     h_call="The Call",
-    call="Every past attempt foundered on privacy. If proof of humanity becomes mandatory, let it be in this form "
+    call="E-mail was born in 1982 with no proof of sender; it took until 2007, and billions of spam messages, to add "
+         "one. Let us not repeat the mistake with AI: prove that a human is there before opening the floodgates. "
+         "Every past attempt foundered on privacy. If proof of humanity becomes mandatory, let it be in this form "
          "and no other.",
     decree=[("Manufacturers", "build it."), ("Platforms", "accept anonymity."),
             ("Legislators", "protect those who cannot type.")],

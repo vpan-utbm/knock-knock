@@ -129,6 +129,12 @@ Deux choses ont changé :
   appareils non certifiés, sans qu'aucune loi ne l'ait voté. Et elle arrive par la loi : la vérification
   d'âge en France, le marquage des contenus générés par l'IA en Europe.
 
+L'histoire a déjà donné la leçon. Le courrier électronique est né en 1982 sans aucun moyen de prouver qui
+l'envoie. La preuve n'est arrivée qu'en 2007 (DKIM), puis en 2015 (DMARC), après des milliards de spams et
+d'hameçonnages. Aujourd'hui, tout le monde se tourne vers plus d'IA, et presque personne vers la preuve qu'un
+humain est là. Un jour, on se retournera et on se dira : on aurait dû prouver qu'il y avait un humain avant
+d'ouvrir les vannes.
+
 Si la preuve d'humanité devient obligatoire, la seule question est **sous quelle forme** : une attestation
 anonyme qui garde la biométrie dans le clavier, ou un identifiant unique qui trace chaque texte. Ce choix se
 fait maintenant, quand les premiers modèles sortent. Un modèle respectueux qui existe avant la loi a toutes
@@ -166,5 +172,9 @@ Ce manifeste ne revendique rien. **Les idées appartiennent à ceux qui les réa
 - Apple Platform Security, *Magic Keyboard with Touch ID* :
   https://support.apple.com/guide/security/magic-keyboard-with-touch-id-secf60513daa/web
 - ISO/IEC 30107, détection des attaques par présentation (détection du vivant en biométrie).
+- J. Postel, *Simple Mail Transfer Protocol*, RFC 821 (1982) : https://www.rfc-editor.org/rfc/rfc821
+- *DomainKeys Identified Mail (DKIM) Signatures*, RFC 4871 (2007) : https://www.rfc-editor.org/rfc/rfc4871
+- *Domain-based Message Authentication, Reporting, and Conformance (DMARC)*, RFC 7489 (2015) :
+  https://www.rfc-editor.org/rfc/rfc7489
 - FIDO Alliance, attestation des authentificateurs par lots.
 - Trusted Computing Group, *Direct Anonymous Attestation* (attestation anonyme des puces TPM 2.0).

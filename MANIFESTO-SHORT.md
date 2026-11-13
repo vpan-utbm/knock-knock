@@ -36,6 +36,9 @@ escapes it better: a finger must press the key. So we start there.
 
 ## The call
 
+E-mail was born in 1982 with no proof of sender; it took until 2007, and billions of spam messages, to add
+one. Let us not repeat the mistake with AI: prove that a human is there before opening the floodgates.
+
 Every past attempt foundered on privacy. If proof of humanity becomes mandatory, let it be in this form and
 no other.
 

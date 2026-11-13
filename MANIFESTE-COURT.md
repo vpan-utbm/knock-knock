@@ -36,6 +36,10 @@ mieux, il faut un doigt sur la touche. On commence donc par lui.
 
 ## L'appel
 
+Le courrier électronique est né en 1982 sans preuve d'expéditeur ; il a fallu attendre 2007, et des milliards
+de spams, pour l'ajouter. Ne refaisons pas l'erreur avec l'IA : prouvons qu'un humain est là avant d'ouvrir
+les vannes.
+
 Toutes les tentatives passées sont tombées sur la vie privée. Si la preuve d'humanité devient obligatoire,
 qu'elle le devienne sous cette forme, et pas sous une autre.
 
