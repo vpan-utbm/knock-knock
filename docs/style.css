@@ -271,6 +271,16 @@ h1 {
 }
 .stele p { margin: 0; }
 
+/* The provenance map: an inset cartouche; each passage says in words where it came from (never colour alone). */
+.proofmap { margin: 1.6rem 0 0; padding: 1rem 1.1rem 0.9rem; border: 1px solid rgba(70, 52, 32, 0.32); border-radius: 3px; background: rgba(255, 255, 255, 0.16); box-shadow: inset 0 1px 3px rgba(45, 30, 15, 0.18); }
+.proofmap figcaption { margin: 0 0 0.7rem; font-family: var(--roman); font-weight: 600; font-size: 0.82rem; line-height: 1.45; letter-spacing: 0.08em; text-align: center; color: var(--bronze); text-wrap: balance; }
+.pm { margin: 0.65rem 0 0; padding: 0.1rem 0 0.1rem 0.8rem; font-size: 1rem; line-height: 1.5; border-left: 3px solid var(--carve-soft); }
+.pm-pasted { border-left-style: dashed; }
+.pm-altered { border-left: 5px double var(--link); }
+.pm-tag { display: block; font-family: var(--roman); font-weight: 600; font-size: 0.7rem; letter-spacing: 0.1em; color: var(--bronze); }
+.pm-altered .pm-tag { color: var(--link); }
+.pm-note { margin: 0.9rem 0 0; font-family: var(--italic); font-style: italic; font-size: 1.05rem; line-height: 1.4; text-align: center; color: var(--carve-soft); text-wrap: balance; }
+
 .gloss {
   margin: 1.2rem 0 0;
   padding: 1rem 0.5rem 0;

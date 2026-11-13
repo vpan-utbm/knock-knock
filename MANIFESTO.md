@@ -74,6 +74,10 @@ principles.
 
 **Proven:** a human finger, on a genuine keyboard, typed this text, at this moment, for this recipient.
 
+**And passage by passage.** On any text, a letter, a thesis, a contract, the recipient sees what was typed by
+hand, what was pasted, and what was changed outside the keyboard, at the exact spot. Nothing is forbidden;
+everything is shown. "Not typed" describes, never accuses: a quotation is pasted.
+
 **Not proven:**
 - who drafted the words;
 - who the human is, unless they choose to say.

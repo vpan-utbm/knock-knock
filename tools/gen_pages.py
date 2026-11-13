@@ -43,6 +43,14 @@ FR = dict(
     ],
     gloss="Ce n’est pas la preuve de qui a rédigé, c’est la preuve qu’un humain a tapé et en répond, comme une "
           "signature au bas d’un contrat. Une empreinte digitale sur ce que l’on écrit.",
+    map_caption="Ce que voit le destinataire : chaque passage, et d’où il vient.",
+    map=[
+        ("typed", "Tapé à la main", "Madame, Monsieur, suite à notre échange du 12 novembre, je vous confirme "
+         "mon accord sur les points 1 à 3."),
+        ("pasted", "Collé, non tapé", "« Le prestataire livre sous trente jours à compter de la signature. »"),
+        ("altered", "Tapé, puis modifié hors du clavier", "Je suis d’accord sur le point 4."),
+    ],
+    map_note="« Non tapé » décrit, n’accuse jamais : une citation se colle.",
     h_beyond="Au-delà du clavier",
     beyond="Souris, caméra, micro : chaque capteur peut signer ce qu’il capte, avec sa propre détection du vivant. "
            "Leur limite commune : ce qu’on rejoue devant le capteur, un écran ou un haut-parleur, passe pour du réel. "
@@ -100,6 +108,14 @@ EN = dict(
     ],
     gloss="It is not proof of who drafted the words; it is proof that a human typed them and stands behind them, "
           "like a signature at the bottom of a contract. A fingerprint on what we write.",
+    map_caption="What the recipient sees: every passage, and where it came from.",
+    map=[
+        ("typed", "Typed by hand", "Dear Sir or Madam, further to our conversation of 12 November, I confirm "
+         "my agreement on points 1 to 3."),
+        ("pasted", "Pasted, not typed", "“The supplier delivers within thirty days of signature.”"),
+        ("altered", "Typed, then changed outside the keyboard", "I agree on point 4."),
+    ],
+    map_note="“Not typed” describes, never accuses: a quotation is pasted.",
     h_beyond="Beyond the keyboard",
     beyond="Mouse, camera, microphone: each sensor can sign what it captures, with its own liveness detection. "
            "Their common limit: whatever is replayed in front of the sensor, a screen or a loudspeaker, passes for real. "
@@ -134,6 +150,8 @@ def page(t):
         f'<span class="law"><span class="visually-hidden">{ROMAN[i]}. </span>{e(t["laws"][i][0])}</span>'
         f'<span class="gloss-line">{e(t["laws"][i][1])}</span></li>' for i in range(7))
     steles = "\n".join(f'            <div class="stele"><h3>{e(h)}</h3><p>{e(p)}</p></div>' for h, p in t["steles"])
+    passages = "\n".join(
+        f'            <p class="pm pm-{k}"><span class="pm-tag">{e(tag)}</span> {e(txt)}</p>' for k, tag, txt in t["map"])
     decree = "\n".join(f"            <dt>{e(a)}</dt><dd>{e(b)}</dd>" for a, b in t["decree"])
     preamble = "\n".join(
         f'          <p{" class=\"lettrine\"" if i == 0 else ""}>{e(p)}</p>' for i, p in enumerate(t["preamble"]))
@@ -197,6 +215,11 @@ def page(t):
 {steles}
           </div>
           <p class="gloss">{e(t['gloss'])}</p>
+          <figure class="proofmap">
+            <figcaption>{e(t['map_caption'])}</figcaption>
+{passages}
+            <p class="pm-note">{e(t['map_note'])}</p>
+          </figure>
         </section>
         <section aria-labelledby="h-beyond">
           <h2 id="h-beyond">{e(t['h_beyond'])}</h2>

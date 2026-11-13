@@ -76,6 +76,10 @@ négociables.
 **Prouvé :** un doigt humain, sur un clavier authentique, a tapé ce texte-là, à ce moment-là, pour ce
 destinataire-là.
 
+**Et passage par passage.** Sur n'importe quel texte, une lettre, un mémoire, un contrat, le destinataire voit
+ce qui a été tapé à la main, ce qui a été collé, et ce qui a été modifié hors du clavier, à l'endroit exact.
+On n'interdit rien, on montre. « Non tapé » décrit, n'accuse jamais : une citation se colle.
+
 **Pas prouvé :**
 - qui a rédigé les mots ;
 - qui est l'humain, sauf s'il le choisit.
