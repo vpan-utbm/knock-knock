@@ -40,6 +40,7 @@ qu'il a tapé. Il prouve qu'un humain a tapé ces mots et en répond, jamais qui
 | --- | --- | --- |
 | One page | [MANIFESTO-SHORT.md](MANIFESTO-SHORT.md) | [MANIFESTE-COURT.md](MANIFESTE-COURT.md) |
 | Full manifesto, limits and references | [MANIFESTO.md](MANIFESTO.md) | [MANIFESTE.md](MANIFESTE.md) |
+| The objections, and our answers | [FAQ-EN.md](FAQ-EN.md) | [FAQ.md](FAQ.md) |
 | Technical note: protocol, threat model, open problems | [TECHNICAL-NOTE.md](TECHNICAL-NOTE.md) | *(en anglais)* |
 | The page | [vpan-utbm.github.io/knock-knock/en.html](https://vpan-utbm.github.io/knock-knock/en.html) | [vpan-utbm.github.io/knock-knock](https://vpan-utbm.github.io/knock-knock/) |
 
