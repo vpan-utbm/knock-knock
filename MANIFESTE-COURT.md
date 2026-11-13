@@ -41,7 +41,8 @@ des actions, on saura quelle commande un humain a tapée, et laquelle vient de l
 
 Le courrier électronique est né en 1982 sans preuve d'expéditeur ; il a fallu attendre 2007, et des milliards
 de spams, pour l'ajouter. Ne refaisons pas l'erreur avec l'IA : prouvons qu'un humain est là avant d'ouvrir
-les vannes.
+les vannes. On ne freine pas l'IA, on protège l'humain : le marquage des textes de l'IA demande la
+bonne volonté de tous ses fabricants, la preuve d'humanité ne demande rien à personne.
 
 Toutes les tentatives passées sont tombées sur la vie privée. Si la preuve d'humanité devient obligatoire,
 qu'elle le devienne sous cette forme, et pas sous une autre.

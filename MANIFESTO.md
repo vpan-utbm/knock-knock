@@ -136,6 +136,11 @@ Two things have changed:
   devices without any law having required it. And it is arriving through legislation: age verification in
   France, labelling of AI-generated content in Europe.
 
+We are not slowing AI down; we are protecting the human. Marking AI-generated text needs the goodwill of every
+AI maker, and a single refusal is enough to break it: an open model or a hostile actor will mark nothing, and a
+simple paraphrase often erases the mark. Proof of humanity asks nothing of anyone on the AI side: it lives in
+the keyboard of the person typing, and it holds even if every AI in the world stays free and unmarked.
+
 History has already taught this lesson. E-mail was born in 1982 with no way to prove who sent it. Proof only
 arrived in 2007 (DKIM), then in 2015 (DMARC), after billions of spam and phishing messages. Today everyone is
 turning towards more AI, and almost no one towards proof that a human is there. One day we will look back and
@@ -178,8 +183,11 @@ This manifesto claims nothing. **Ideas belong to those who bring them to life.**
 - Apple Platform Security, *Magic Keyboard with Touch ID*:
   https://support.apple.com/guide/security/magic-keyboard-with-touch-id-secf60513daa/web
 - ISO/IEC 30107, presentation attack detection (liveness detection in biometrics).
-- Regulation (EU) 2024/1689 on artificial intelligence (AI Act), Article 14, human oversight:
+- Regulation (EU) 2024/1689 on artificial intelligence (AI Act), Article 14 (human oversight) and
+  Article 50 (marking of AI-generated content):
   https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- V. S. Sadasivan et al., *Can AI-Generated Text be Reliably Detected?* (arXiv, 2023), paraphrasing against
+  watermarks: https://arxiv.org/abs/2303.11156
 - J. Postel, *Simple Mail Transfer Protocol*, RFC 821 (1982): https://www.rfc-editor.org/rfc/rfc821
 - *DomainKeys Identified Mail (DKIM) Signatures*, RFC 4871 (2007): https://www.rfc-editor.org/rfc/rfc4871
 - *Domain-based Message Authentication, Reporting, and Conformance (DMARC)*, RFC 7489 (2015):

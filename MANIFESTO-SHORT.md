@@ -41,6 +41,8 @@ know which command a human typed and which came from the agent.
 
 E-mail was born in 1982 with no proof of sender; it took until 2007, and billions of spam messages, to add
 one. Let us not repeat the mistake with AI: prove that a human is there before opening the floodgates.
+We are not slowing AI down, we are protecting the human: marking AI text needs the goodwill of every AI
+maker; proof of humanity asks nothing of anyone.
 
 Every past attempt foundered on privacy. If proof of humanity becomes mandatory, let it be in this form and
 no other.

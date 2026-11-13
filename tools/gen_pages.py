@@ -60,7 +60,8 @@ FR = dict(
     h_call="L’Appel",
     call="Le courrier électronique est né en 1982 sans preuve d’expéditeur ; il a fallu attendre 2007, et des milliards "
          "de spams, pour l’ajouter. Ne refaisons pas l’erreur avec l’IA : prouvons qu’un humain est là avant d’ouvrir "
-         "les vannes. "
+         "les vannes. On ne freine pas l’IA, on protège l’humain : le marquage des textes de l’IA demande la bonne "
+         "volonté de tous ses fabricants, la preuve d’humanité ne demande rien à personne. "
          "Toutes les tentatives passées sont tombées sur la vie privée. Si la preuve d’humanité devient obligatoire, "
          "qu’elle le devienne sous cette forme, et pas sous une autre.",
     decree=[("Fabricants", "construisez-le."), ("Plateformes", "acceptez l’anonymat."),
@@ -127,6 +128,8 @@ EN = dict(
     h_call="The Call",
     call="E-mail was born in 1982 with no proof of sender; it took until 2007, and billions of spam messages, to add "
          "one. Let us not repeat the mistake with AI: prove that a human is there before opening the floodgates. "
+         "We are not slowing AI down, we are protecting the human: marking AI text needs the goodwill of every AI "
+         "maker; proof of humanity asks nothing of anyone. "
          "Every past attempt foundered on privacy. If proof of humanity becomes mandatory, let it be in this form "
          "and no other.",
     decree=[("Manufacturers", "build it."), ("Platforms", "accept anonymity."),
@@ -239,7 +242,7 @@ def page(t):
         <div class="colophon">
           <p class="maxim">{e(t['maxim'])}</p>
           <p class="signature">Human After All</p>
-          <div class="seal" aria-hidden="true">HP</div>
+          <div class="seal" aria-hidden="true"></div>
           <p class="date">{e(t['date'])}</p>
           <p class="aveu">{e(t['aveu'])}</p>
         </div>

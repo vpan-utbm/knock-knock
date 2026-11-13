@@ -140,6 +140,12 @@ Deux choses ont changé :
   appareils non certifiés, sans qu'aucune loi ne l'ait voté. Et elle arrive par la loi : la vérification
   d'âge en France, le marquage des contenus générés par l'IA en Europe.
 
+On ne freine pas l'IA : on protège l'humain. Le marquage des textes produits par l'IA demande la bonne
+volonté de tous ses fabricants, et il suffit d'un seul qui refuse : un modèle libre ou un acteur hostile ne
+marquera rien, et une simple reformulation efface souvent la marque. La preuve d'humanité ne demande rien à
+personne du côté de l'IA : elle vit dans le clavier de celui qui tape, et elle tient même si toutes les IA du
+monde restent libres et sans marque.
+
 L'histoire a déjà donné la leçon. Le courrier électronique est né en 1982 sans aucun moyen de prouver qui
 l'envoie. La preuve n'est arrivée qu'en 2007 (DKIM), puis en 2015 (DMARC), après des milliards de spams et
 d'hameçonnages. Aujourd'hui, tout le monde se tourne vers plus d'IA, et presque personne vers la preuve qu'un
@@ -183,8 +189,11 @@ Ce manifeste ne revendique rien. **Les idées appartiennent à ceux qui les réa
 - Apple Platform Security, *Magic Keyboard with Touch ID* :
   https://support.apple.com/guide/security/magic-keyboard-with-touch-id-secf60513daa/web
 - ISO/IEC 30107, détection des attaques par présentation (détection du vivant en biométrie).
-- Règlement (UE) 2024/1689 sur l'intelligence artificielle (AI Act), article 14, contrôle humain :
+- Règlement (UE) 2024/1689 sur l'intelligence artificielle (AI Act), article 14 (contrôle humain) et
+  article 50 (marquage des contenus générés par l'IA) :
   https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- V. S. Sadasivan et al., *Can AI-Generated Text be Reliably Detected?* (arXiv, 2023), la reformulation
+  contre le marquage : https://arxiv.org/abs/2303.11156
 - J. Postel, *Simple Mail Transfer Protocol*, RFC 821 (1982) : https://www.rfc-editor.org/rfc/rfc821
 - *DomainKeys Identified Mail (DKIM) Signatures*, RFC 4871 (2007) : https://www.rfc-editor.org/rfc/rfc4871
 - *Domain-based Message Authentication, Reporting, and Conformance (DMARC)*, RFC 7489 (2015) :
