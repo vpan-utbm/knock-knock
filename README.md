@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="docs/banner-en.png" alt="HumanProof — I write, therefore I am. For a keyboard that knows a human typed, without ever saying who." width="800">
+  <img src="docs/banner-en.png" alt="HumanProof — I type, therefore I am. For a keyboard that knows a human typed, without ever saying who." width="800">
 </p>
 
-<p align="center"><b>I write, therefore I am.</b> · <i>J'écris, donc je suis.</i></p>
+<p align="center"><b>I type, therefore I am.</b> · <i>J'écris, donc je suis.</i></p>
 
 <p align="center"><a href="https://vpan-utbm.github.io/knock-knock/en.html"><b>Read the page</b></a> · <a href="https://vpan-utbm.github.io/knock-knock/"><b>Lire la page en français</b></a></p>
 

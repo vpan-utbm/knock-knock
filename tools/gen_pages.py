@@ -78,10 +78,10 @@ FR = dict(
 EN = dict(
     lang="en-GB", page="en.html", banner="banner-en.png", here="English", other="index.html", other_lang="fr",
     other_label="Français",
-    title="HumanProof — I write, therefore I am",
+    title="HumanProof — I type, therefore I am",
     description="A manifesto for a keyboard that knows a human typed, without ever saying who.",
     kicker="The Tables of the Law",
-    tagline="I write, therefore I am.",
+    tagline="I type, therefore I am.",
     subtitle="For a keyboard that knows a human typed, without ever saying who.",
     slogan="Don’t prove who you are. Prove that you are there.",
     laws_label="The seven laws",

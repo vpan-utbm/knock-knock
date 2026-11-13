@@ -1,6 +1,6 @@
 # HumanProof
 
-> ## I write, therefore I am.
+> ## I type, therefore I am.
 
 Soon, no one online will be able to tell a human from a machine. Machines write as we do. CAPTCHAs are
 falling. A measurement taken on the imitator's side proves nothing.

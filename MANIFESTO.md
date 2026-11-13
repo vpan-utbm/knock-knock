@@ -1,6 +1,6 @@
 # HumanProof — Manifesto
 
-> ## I write, therefore I am.
+> ## I type, therefore I am.
 
 *For a keyboard that knows a human typed, without ever saying who.*
 
