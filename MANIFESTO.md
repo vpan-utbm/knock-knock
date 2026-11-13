@@ -40,9 +40,10 @@ A digital fingerprint, left by the finger on what it writes.
    finger. Any one signal can be imitated; all of them together, in real time, far less easily. This is the
    liveness detection that fingerprint readers already perform (ISO/IEC 30107), extended to typing.
 2. **A key born in the keyboard's chip**, which never leaves it, certified by the manufacturer.
-3. **The keyboard itself signs what it typed**: the hash of the text, the "human finger" verdict, a counter
-   and a challenge sent by the recipient. If the computer alters a single character, the signature no longer
-   verifies. Pasted text is not certified. An old signature cannot be replayed.
+3. **The keyboard itself signs what it typed**: the hash of the text, the "human finger" verdict and a
+   challenge sent by the recipient. If the computer alters a single character, the signature no longer
+   verifies. Pasted text is not certified. The challenge, fresh every time, stops an old signature being
+   replayed; there is no counter, which would let one person's texts be linked.
 4. **Anyone can verify it**, using the manufacturer's certificate chain: "typed by a human, on a genuine
    keyboard".
 
@@ -55,8 +56,9 @@ principles.
 
 1. **Biometrics never leave the keyboard.** Only the signed verdict does. The measurements are sensitive data:
    they are born and die in the chip.
-2. **Anonymous by default.** Attestation keys are shared across batches (at least 100,000 keyboards, as with
-   FIDO2): it proves "a genuine keyboard", never "this keyboard".
+2. **Anonymous by default.** Each keyboard keeps its own key but signs on behalf of a group of at least
+   100,000 keyboards (a group signature, like the anonymous attestation of computers' TPM chips): it proves
+   "a genuine keyboard", never "this keyboard". A stolen key can be revoked on its own, without touching the others.
 3. **Identity only by choice.** Those who wish to sign in their own name add a separate key for each service,
    which cannot be linked from one service to another.
 4. **A refusal is never an accusation.** Cold fingers, gloves, tremors, disability: the keyboard says
@@ -161,3 +163,4 @@ This manifesto claims nothing. **Ideas belong to those who bring them to life.**
   https://support.apple.com/guide/security/magic-keyboard-with-touch-id-secf60513daa/web
 - ISO/IEC 30107, presentation attack detection (liveness detection in biometrics).
 - FIDO Alliance, batch attestation of authenticators.
+- Trusted Computing Group, *Direct Anonymous Attestation* (anonymous attestation of TPM 2.0 chips).

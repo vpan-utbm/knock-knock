@@ -41,8 +41,9 @@ Une empreinte digitale numérique, posée par le doigt sur ce qu'il écrit.
    (ISO/IEC 30107), étendue à la frappe.
 2. **Une clé née dans la puce du clavier**, qui n'en sort jamais, certifiée par le fabricant.
 3. **Le clavier signe lui-même ce qu'il a tapé** : l'empreinte (le hash) du texte, le verdict « doigt
-   humain », un compteur et un défi envoyé par le destinataire. Si l'ordinateur retouche un seul caractère,
-   la signature ne vérifie plus. Un copier-coller n'est pas certifié. Une signature ancienne ne se rejoue pas.
+   humain » et un défi envoyé par le destinataire. Si l'ordinateur retouche un seul caractère, la signature
+   ne vérifie plus. Un copier-coller n'est pas certifié. Le défi, neuf à chaque fois, empêche de rejouer une
+   signature ancienne ; pas de compteur, qui permettrait de relier les textes d'une même personne.
 4. **N'importe qui vérifie**, avec la chaîne de certificats du fabricant : « tapé par un humain, sur un
    clavier authentique ».
 
@@ -55,8 +56,9 @@ négociables.
 
 1. **La biométrie ne quitte jamais le clavier.** Seul le verdict signé en sort. Les mesures sont des données
    sensibles : elles naissent et meurent dans la puce.
-2. **Anonyme par défaut.** Les clés d'attestation sont partagées par lots (au moins 100 000 claviers, comme
-   pour FIDO2) : on prouve « un vrai clavier », jamais « ce clavier-là ».
+2. **Anonyme par défaut.** Chaque clavier garde sa propre clé, mais signe au nom d'un groupe d'au moins
+   100 000 claviers (une signature de groupe, comme l'attestation anonyme des puces TPM des ordinateurs) : on
+   prouve « un vrai clavier », jamais « ce clavier-là ». Une clé volée se révoque seule, sans toucher aux autres.
 3. **L'identité seulement par choix.** Celui qui veut signer de son nom ajoute une clé distincte par service,
    impossible à relier d'un service à l'autre.
 4. **Un refus n'est jamais une accusation.** Doigts froids, gants, tremblements, handicap : le clavier dit
@@ -165,3 +167,4 @@ Ce manifeste ne revendique rien. **Les idées appartiennent à ceux qui les réa
   https://support.apple.com/guide/security/magic-keyboard-with-touch-id-secf60513daa/web
 - ISO/IEC 30107, détection des attaques par présentation (détection du vivant en biométrie).
 - FIDO Alliance, attestation des authentificateurs par lots.
+- Trusted Computing Group, *Direct Anonymous Attestation* (attestation anonyme des puces TPM 2.0).
