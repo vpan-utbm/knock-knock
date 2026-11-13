@@ -1,6 +1,6 @@
 # HumanProof — Technical note
 
-*Draft 0.2, 13 November 2026 — by **Human After All**. Written with the help of an AI.*
+*Draft 0.3, 13 November 2026 — by **Human After All**. Written with the help of an AI.*
 *Companion to the [manifesto](MANIFESTO.md). It is meant to be broken: please say where it fails.*
 
 ---
@@ -128,7 +128,30 @@ this service"). Two services cannot link the keys.
 - **Email and messaging:** an attached proof; the recipient's challenge needs a round trip, or a published per-recipient
   nonce (open problem).
 
-## 9. A prototype that anyone could build
+## 9. A use case: the black box of supervised agents
+
+AI agents are starting to run critical systems (grids, hospitals, trading, infrastructure) under human supervision.
+After an incident, today's logs say "user admin ran this command"; nobody can tell whether the human typed it or the
+agent sent it with the human's account.
+
+With HumanProof, the operator's console requests a proof for every command and every approval it accepts. The log
+then reads, line by line: **typed by hand** (a human), **not typed** (the agent, or a paste), with the provenance map of
+§4.4 for longer inputs. The rule is simple: an agent has no finger.
+
+Three limits, stated plainly:
+
+- **Who did what, not who is to blame.** A "yes" typed without reading is still a "yes". The EU AI Act asks overseers
+  of high-risk AI to stay aware of automation bias (Article 14(4)(b)); the proof shows that a human approved, not that
+  they understood.
+- **Here, which human matters.** The operator signs with a professional identity key (§7), chosen for this service only.
+- **No authority from the proof.** Principle 7 still holds: a critical command must also travel through an
+  authenticated channel; proving that a human typed it grants nothing on its own.
+
+The AI Act requires effective human oversight of high-risk AI systems (Article 14, applicable from 2 December 2027 for
+the systems of its Annex III, which include critical infrastructure). Logs that prove a human was in the loop are one
+way to show it.
+
+## 10. A prototype that anyone could build
 
 A QMK or ZMK keyboard with **Hall-effect switches** (they already measure travel continuously), force sensors, and a
 secure element such as the ATECC608B (ECDSA P-256, option A). Honest limit: on such a board the keyboard firmware runs
@@ -136,7 +159,7 @@ outside the secure element, so a compromised firmware can inject keys. The proto
 experience, not the security. The real product needs the scan matrix, the buffer and the classifier inside the
 secure boundary, as payment-terminal keypads already do.
 
-## 10. A precedent: signature pads in banks
+## 11. A precedent: signature pads in banks
 
 Banks already collect handwritten signatures on electronic pads that record pressure, movement and speed. Two of their
 ideas carry over, one does not.
@@ -150,7 +173,7 @@ ideas carry over, one does not.
   it: the biometrics would leave the keyboard (principle 1) and the escrow would become a target. But it shows that
   the law already knows how to frame biometric signatures.
 
-## 11. Open problems
+## 12. Open problems
 
 1. **Segment size.** Long segments catch more tampering but break on honest edits; short ones survive edits but let a
    host reorder words. Which closing rules (pause threshold, keys) balance the two? And segment boundaries reveal
@@ -166,7 +189,7 @@ ideas carry over, one does not.
    typist believes. The light shows that a session is open, not for whom. Accepted for now: each redirected text
    still costs a human gesture, so it cannot scale.
 
-## 12. Prior art
+## 13. Prior art
 
 Signing keystrokes: Intel (US 2014/0115662 A1, priority 2008, abandoned), Lawrence Livermore National Laboratory
 (US 12,476,822 B2, 2025), *Suppressing Bot Traffic with Accurate Human Attestation* (ACM, 2010), *Privacy-Preserving

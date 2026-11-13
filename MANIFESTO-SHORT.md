@@ -34,6 +34,9 @@ Mouse, camera, microphone: each sensor can sign what it captures, with its own l
 limit: whatever is replayed in front of the sensor, a screen or a loudspeaker, passes for real. The keyboard
 escapes it better: a finger must press the key. So we start there.
 
+And tomorrow, when AI agents run critical systems, an agent will have no finger: in the log of actions, we will
+know which command a human typed and which came from the agent.
+
 ## The call
 
 E-mail was born in 1982 with no proof of sender; it took until 2007, and billions of spam messages, to add

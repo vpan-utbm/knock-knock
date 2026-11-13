@@ -106,6 +106,13 @@ real. A camera signs the photo of a screen as readily as that of a face; a micro
 readily as a throat. The keyboard escapes it better, because a physical finger must press the key. That is why
 this manifesto starts there: it is the easiest to prove, and the first to build.
 
+**The black box of agents.** Tomorrow, AI agents will run critical systems, a power grid, a hospital, a trading
+floor, under human supervision. An agent has no finger: in the log of actions, the proof will say which command
+a human typed and which came from the agent. On the day of an accident, we will know who did what. Not who is
+to blame: a "yes" typed without reading is still a "yes"; but the inquiry will start from facts, not guesses.
+It is also what Europe requires: the AI Act mandates effective human oversight of high-risk AI (Article 14,
+from December 2027). It will have to be proved.
+
 ## 7. Why now
 
 The idea is not new, and its pieces already exist.
@@ -171,6 +178,8 @@ This manifesto claims nothing. **Ideas belong to those who bring them to life.**
 - Apple Platform Security, *Magic Keyboard with Touch ID*:
   https://support.apple.com/guide/security/magic-keyboard-with-touch-id-secf60513daa/web
 - ISO/IEC 30107, presentation attack detection (liveness detection in biometrics).
+- Regulation (EU) 2024/1689 on artificial intelligence (AI Act), Article 14, human oversight:
+  https://eur-lex.europa.eu/eli/reg/2024/1689/oj
 - J. Postel, *Simple Mail Transfer Protocol*, RFC 821 (1982): https://www.rfc-editor.org/rfc/rfc821
 - *DomainKeys Identified Mail (DKIM) Signatures*, RFC 4871 (2007): https://www.rfc-editor.org/rfc/rfc4871
 - *Domain-based Message Authentication, Reporting, and Conformance (DMARC)*, RFC 7489 (2015):

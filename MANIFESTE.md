@@ -108,6 +108,13 @@ Une caméra signe aussi bien la photo d'un écran que celle d'un visage ; un mic
 haut-parleur qu'une gorge. Le clavier y échappe mieux, parce qu'il faut un doigt physique sur la touche. C'est
 pourquoi ce manifeste commence par lui : c'est le plus facile à prouver, et le premier à construire.
 
+**La boîte noire des agents.** Demain, des agents d'IA conduiront des systèmes critiques, un réseau électrique,
+un hôpital, une salle de marché, sous la surveillance d'humains. Un agent n'a pas de doigt : dans le journal
+des actions, la preuve dira quelle commande un humain a tapée, et laquelle vient de l'agent. Le jour d'un
+accident, on saura qui a fait quoi. Pas qui est responsable : un « oui » tapé sans lire reste un « oui » ; mais
+l'enquête partira de faits, pas de suppositions. C'est aussi ce que l'Europe exige : l'AI Act impose un contrôle
+humain effectif des IA à haut risque (article 14, à partir de décembre 2027). Encore faudra-t-il le prouver.
+
 ## 7. Pourquoi maintenant
 
 L'idée n'est pas neuve, et ses morceaux existent déjà.
@@ -176,6 +183,8 @@ Ce manifeste ne revendique rien. **Les idées appartiennent à ceux qui les réa
 - Apple Platform Security, *Magic Keyboard with Touch ID* :
   https://support.apple.com/guide/security/magic-keyboard-with-touch-id-secf60513daa/web
 - ISO/IEC 30107, détection des attaques par présentation (détection du vivant en biométrie).
+- Règlement (UE) 2024/1689 sur l'intelligence artificielle (AI Act), article 14, contrôle humain :
+  https://eur-lex.europa.eu/eli/reg/2024/1689/oj
 - J. Postel, *Simple Mail Transfer Protocol*, RFC 821 (1982) : https://www.rfc-editor.org/rfc/rfc821
 - *DomainKeys Identified Mail (DKIM) Signatures*, RFC 4871 (2007) : https://www.rfc-editor.org/rfc/rfc4871
 - *Domain-based Message Authentication, Reporting, and Conformance (DMARC)*, RFC 7489 (2015) :

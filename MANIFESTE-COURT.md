@@ -34,6 +34,9 @@ Souris, caméra, micro : chaque capteur peut signer ce qu'il capte, avec sa prop
 commune : ce qu'on rejoue devant le capteur, un écran ou un haut-parleur, passe pour du réel. Le clavier y échappe
 mieux, il faut un doigt sur la touche. On commence donc par lui.
 
+Et demain, quand des agents d'IA conduiront des systèmes critiques, un agent n'aura pas de doigt : dans le journal
+des actions, on saura quelle commande un humain a tapée, et laquelle vient de l'agent.
+
 ## L'appel
 
 Le courrier électronique est né en 1982 sans preuve d'expéditeur ; il a fallu attendre 2007, et des milliards

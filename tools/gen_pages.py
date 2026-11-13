@@ -54,7 +54,9 @@ FR = dict(
     h_beyond="Au-delà du clavier",
     beyond="Souris, caméra, micro : chaque capteur peut signer ce qu’il capte, avec sa propre détection du vivant. "
            "Leur limite commune : ce qu’on rejoue devant le capteur, un écran ou un haut-parleur, passe pour du réel. "
-           "Le clavier y échappe mieux, il faut un doigt sur la touche. On commence donc par lui.",
+           "Le clavier y échappe mieux, il faut un doigt sur la touche. On commence donc par lui. "
+           "Et demain, quand des agents d’IA conduiront des systèmes critiques, un agent n’aura pas de doigt : "
+           "dans le journal des actions, on saura quelle commande un humain a tapée, et laquelle vient de l’agent.",
     h_call="L’Appel",
     call="Le courrier électronique est né en 1982 sans preuve d’expéditeur ; il a fallu attendre 2007, et des milliards "
          "de spams, pour l’ajouter. Ne refaisons pas l’erreur avec l’IA : prouvons qu’un humain est là avant d’ouvrir "
@@ -119,7 +121,9 @@ EN = dict(
     h_beyond="Beyond the keyboard",
     beyond="Mouse, camera, microphone: each sensor can sign what it captures, with its own liveness detection. "
            "Their common limit: whatever is replayed in front of the sensor, a screen or a loudspeaker, passes for real. "
-           "The keyboard escapes it better: a finger must press the key. So we start there.",
+           "The keyboard escapes it better: a finger must press the key. So we start there. "
+           "And tomorrow, when AI agents run critical systems, an agent will have no finger: in the log of "
+           "actions, we will know which command a human typed and which came from the agent.",
     h_call="The Call",
     call="E-mail was born in 1982 with no proof of sender; it took until 2007, and billions of spam messages, to add "
          "one. Let us not repeat the mistake with AI: prove that a human is there before opening the floodgates. "
