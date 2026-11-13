@@ -28,6 +28,12 @@ signature at the bottom of a contract. A fingerprint on what we write.
 6. **Open**: verifiable by anyone, without a platform.
 7. **Proof of humanity is not a right**: it grants no authority over the reader's machine.
 
+## Beyond the keyboard
+
+Mouse, camera, microphone: each sensor can sign what it captures, with its own liveness detection. Their common
+limit: whatever is replayed in front of the sensor, a screen or a loudspeaker, passes for real. The keyboard
+escapes it better: a finger must press the key. So we start there.
+
 ## The call
 
 Every past attempt foundered on privacy. If proof of humanity becomes mandatory, let it be in this form and

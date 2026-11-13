@@ -81,7 +81,24 @@ principles.
 - The keyboard does not know letters, only keys (AZERTY, QWERTY, dead keys, input methods for Asian
   languages): it must know the layout, or sign the raw key codes.
 
-## 6. Why now
+## 6. Beyond the keyboard
+
+The principle holds for every input device: **each sensor signs what it captured itself, with its own liveness
+detection**, and the seven principles apply unchanged.
+
+| Device | Sign of life | What exists | The trap |
+| --- | --- | --- | --- |
+| Keyboard | rhythm, where the finger lands, force, finger temperature | patents on signing keystrokes, nothing assembled | a robotic arm, costly and slow |
+| Mouse | the hand's physiological tremor (8 to 12 Hz, present in every human), micro-corrections | mouse-behaviour analysis, in software, hence forgeable | a robot adding a fake tremor |
+| Camera | depth, real light on the sensor | signing at the moment of capture (C2PA) on some cameras and smartphones | filming a screen: the photo of a fake is faithfully signed |
+| Microphone | breath, the pop of consonants close to the mic, the acoustics of the room | research against voice spoofing | playing a synthetic voice through a loudspeaker |
+
+Their common limit is known as the **analogue hole**: whatever can be replayed in front of a sensor passes for
+real. A camera signs the photo of a screen as readily as that of a face; a microphone records a loudspeaker as
+readily as a throat. The keyboard escapes it better, because a physical finger must press the key. That is why
+this manifesto starts there: it is the easiest to prove, and the first to build.
+
+## 7. Why now
 
 The idea is not new, and its pieces already exist.
 
@@ -112,7 +129,7 @@ becoming the standard. Otherwise, we inherit whichever comes first.
 France has shown it can be done: in imposing age verification, it required a double-anonymity option. An
 obligation can respect privacy, if someone insists on it from the start.
 
-## 7. The call
+## 8. The call
 
 To the makers of keyboards, computers and chips: build it, and honour these seven principles.
 

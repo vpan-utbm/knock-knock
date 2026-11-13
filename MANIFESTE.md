@@ -83,7 +83,24 @@ destinataire-là.
 - Le clavier ne connaît pas les lettres, seulement les touches (AZERTY, QWERTY, touches mortes, saisie des
   langues asiatiques) : il doit connaître la disposition, ou signer les codes bruts.
 
-## 6. Pourquoi maintenant
+## 6. Au-delà du clavier
+
+Le principe vaut pour tout périphérique d'entrée : **chaque capteur signe ce qu'il a lui-même capté, avec sa propre
+détection du vivant**, et les sept principes s'y appliquent tels quels.
+
+| Périphérique | Signe du vivant | Ce qui existe | Le piège |
+| --- | --- | --- | --- |
+| Clavier | la cadence, le point d'appui, la force, la température du doigt | des brevets sur la signature des frappes, rien d'assemblé | le bras robot, coûteux et lent |
+| Souris | le tremblement physiologique de la main (8 à 12 Hz, présent chez tout humain), les micro-corrections | l'analyse du comportement de la souris, côté logiciel, donc falsifiable | un robot qui ajoute un faux tremblement |
+| Caméra | la profondeur, la vraie lumière sur le capteur | la signature à la prise de vue (C2PA) sur certains appareils photo et smartphones | filmer un écran : on signe fidèlement la photo d'un faux |
+| Micro | le souffle, l'impact des consonnes près du micro, l'acoustique de la pièce | la recherche contre l'usurpation de la voix | diffuser une voix de synthèse par un haut-parleur |
+
+Leur limite commune s'appelle le **trou analogique** : ce qu'on peut rejouer devant un capteur passe pour du réel.
+Une caméra signe aussi bien la photo d'un écran que celle d'un visage ; un micro enregistre aussi bien un
+haut-parleur qu'une gorge. Le clavier y échappe mieux, parce qu'il faut un doigt physique sur la touche. C'est
+pourquoi ce manifeste commence par lui : c'est le plus facile à prouver, et le premier à construire.
+
+## 7. Pourquoi maintenant
 
 L'idée n'est pas neuve, et ses morceaux existent déjà.
 
@@ -116,7 +133,7 @@ les chances de devenir la norme. Sinon, on hérite du premier qui passe.
 La France a montré que c'est possible : en imposant la vérification d'âge, elle a exigé une option en double
 anonymat. Une obligation peut respecter la vie privée, si quelqu'un l'exige dès le départ.
 
-## 7. L'appel
+## 8. L'appel
 
 Aux fabricants de claviers, d'ordinateurs et de puces : construisez-le, en respectant ces sept principes.
 

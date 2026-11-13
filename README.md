@@ -45,7 +45,7 @@ qu'il a tapé. Il prouve qu'un humain a tapé ces mots et en répond, jamais qui
 ## Licence
 
 The texts are licensed under [CC BY 4.0](LICENSE): copy, translate and adapt them freely, as long as you credit
-the source and **indicate your changes**. The fonts of the page (Cinzel, EB Garamond) are
+the source and **indicate your changes**. The fonts of the page (Cinzel, EB Garamond, Cormorant) are
 under the [SIL Open Font License 1.1](docs/fonts/).
 
 *Les textes sont sous licence CC BY 4.0 : reprenez-les, traduisez-les, adaptez-les librement, en citant la source

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 260 600 600">
+  <defs>
+    <filter id="carve" filterUnits="userSpaceOnUse" x="0" y="220" width="600" height="680" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" seed="4" stitchTiles="stitch" x="0" y="260" width="600" height="600" result="chipsT"/>
+      <feTile in="chipsT" result="chips"/>
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1 0 0 0 0" result="faceA"/>
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 1 0 0 0" result="field"/>
+      <feDisplacementMap in="faceA" in2="chips" scale="6" xChannelSelector="R" yChannelSelector="G" result="face"/>
+      <feGaussianBlur in="face" stdDeviation="3.5" result="faceH"/>
+      <feGaussianBlur in="field" stdDeviation="1.6" result="fieldH"/>
+      <feComposite in="faceH" in2="fieldH" operator="arithmetic" k2="1" k3="-0.2" result="carved"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="3" stitchTiles="stitch" x="0" y="260" width="600" height="600" result="reliefT"/>
+      <feTile in="reliefT" result="relief"/>
+      <feComposite in="carved" in2="relief" operator="arithmetic" k2="1" k3="0.3" k4="-0.15" result="height"/>
+      <feDiffuseLighting in="height" surfaceScale="6" diffuseConstant="1" lighting-color="#ffffff" result="light">
+        <feDistantLight azimuth="235" elevation="50"/>
+      </feDiffuseLighting>
+      <feComponentTransfer in="light" result="light2">
+        <feFuncR type="linear" slope="0.75" intercept="0.33"/><feFuncG type="linear" slope="0.75" intercept="0.33"/><feFuncB type="linear" slope="0.75" intercept="0.33"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#f6eee0" result="stone"/>
+      <feBlend in="light2" in2="stone" mode="multiply" result="lit"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="5" stitchTiles="stitch" x="0" y="260" width="600" height="600" result="fineT"/>
+      <feTile in="fineT" result="fine"/>
+      <feColorMatrix in="fine" type="matrix" values="0.18 0 0 0 0.9  0.18 0 0 0 0.89  0.18 0 0 0 0.88  0 0 0 0 1" result="grain"/>
+      <feBlend in="lit" in2="grain" mode="multiply" result="lit3"/>
+      <feComposite in="lit3" in2="face" operator="in" result="slab"/>
+      <feOffset in="face" dx="5" dy="7" result="sideA"/>
+      <feFlood flood-color="#b3a488" result="sideC"/>
+      <feBlend in="sideC" in2="grain" mode="multiply" result="sideG"/>
+      <feComposite in="sideG" in2="sideA" operator="in" result="side"/>
+      <feMerge><feMergeNode in="side"/><feMergeNode in="slab"/></feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#carve)"><path d="M11 230 A289 219 0 0 1 589 230 L589 926 L11 926 Z" fill="#f00"/><path d="M28 230 A272 202 0 0 1 572 230 L572 909 L28 909 Z" fill="#fff"/></g>
+</svg>

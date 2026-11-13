@@ -1,25 +1,28 @@
-/* HumanProof: the Tables of the Law, Sinai at dawn. No script, no third-party request: fonts are self-hosted (SIL OFL). */
+/* HumanProof: the whole manifesto carved on two Tables of the Law, standing on Sinai at dawn.
+   No script, no third-party request: fonts are self-hosted (SIL OFL), art is local SVG. */
 
 @font-face { font-family: "Cinzel"; src: url("fonts/Cinzel.ttf") format("truetype"); font-weight: 400 900; font-display: swap; }
 @font-face { font-family: "EB Garamond"; src: url("fonts/EBGaramond.ttf") format("truetype"); font-weight: 400 800; font-style: normal; font-display: swap; }
-@font-face { font-family: "EB Garamond"; src: url("fonts/EBGaramond-Italic.ttf") format("truetype"); font-weight: 400 800; font-style: italic; font-display: swap; }
+@font-face { font-family: "Cormorant"; src: url("fonts/Cormorant-Italic.ttf") format("truetype"); font-weight: 300 700; font-style: italic; font-display: swap; }
 
 :root {
-  --sand: #fbf3e2;
-  --sand-deep: #f1dfba;
-  --ink: #3a2816;
-  --ink-soft: #5e4630;
-  --bronze: #7a4512;
-  --bronze-hi: #a8661f;
-  --terracotta: #8a3a17;
-  --carved: #8b1e1e;
-  --stone-hi: #f1eee7;
-  --stone: #d3cdc0;
-  --stone-lo: #ada595;
-  --stone-ink: #2b2620;
-  --stone-soft: #4d463c;
+  --sky-top: #f2ede5;
+  --sky-mid: #f8ead2;
+  --sky-low: #f6dbb0;
+  --sand: #efdcbc;
+  --ink: #2b2016;
+  --ink-soft: #5a4632;
+  --link: #7a3413;
+  --carve: #2e251c;
+  --carve-soft: #46392c;
+  --bronze: #5c3c0e;
+  --gilt: linear-gradient(180deg, #b88a3a 0%, #7d5414 46%, #5a3a08 54%, #9a6d24 100%);
+  --incised: 0 1px 0 rgba(255, 255, 255, 0.55);
+  --incised-deep: 0 -1px 0 rgba(45, 30, 15, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
+  --rule: linear-gradient(rgba(70, 52, 32, 0.38) 50%, rgba(255, 255, 255, 0.7) 50%);
   --roman: "Cinzel", "Trajan Pro", Georgia, serif;
   --book: "EB Garamond", Garamond, Georgia, serif;
+  --italic: "Cormorant", "EB Garamond", Garamond, Georgia, serif;
   color-scheme: light;
 }
 
@@ -31,230 +34,316 @@ body {
   margin: 0;
   color: var(--ink);
   font-family: var(--book);
-  font-size: 1.2rem;
-  line-height: 1.65;
-  background: linear-gradient(var(--sand) 40%, var(--sand-deep));
+  font-size: 1.125rem;
+  line-height: 1.6;
+  background: var(--sand);
+  overflow-x: clip;
 }
 
-a { color: var(--terracotta); text-underline-offset: 0.2em; }
-a:hover { color: #5c230b; }
-a:focus-visible { outline: 2px solid var(--terracotta); outline-offset: 3px; border-radius: 2px; }
+a { color: var(--link); text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+a:hover { color: #4f1f08; text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 2px; }
 
-/* read by screen readers, not shown (the carved numeral is decorative) */
+/* read by screen readers, not shown (the gilded numeral is decorative) */
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
-/* ---- Sinai at dawn: light from above, rays, the mountain ---- */
+/* ---- The sky: dawn breaking behind the summit ---- */
 
-.sinai {
-  position: relative;
-  overflow: hidden;
-  padding: 1rem 1rem 0;
+.sky {
+  padding: 1rem 1rem max(28%, 19rem);
   text-align: center;
   background:
-    radial-gradient(ellipse 42% 52% at 50% 36%, rgba(255, 252, 240, 0.97), rgba(255, 238, 196, 0.6) 48%, transparent 76%),
-    repeating-conic-gradient(from -90deg at 50% 36%, rgba(232, 176, 92, 0.22) 0deg 3deg, transparent 3deg 9deg),
-    linear-gradient(#efcf94, #f7e5bf 55%, #f6e3bb);
+    url("sinai.svg") center bottom / max(100%, 1100px) auto no-repeat,
+    linear-gradient(var(--sky-top), var(--sky-mid) 55%, var(--sky-low));
 }
 
 .lang {
-  max-width: 62rem;
-  margin: 0 auto 1.6rem;
+  max-width: 75rem;
+  margin: 0 auto 1.4rem;
   text-align: right;
   font-family: var(--roman);
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--bronze);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--ink);
 }
-.lang [aria-current] { color: var(--ink); }
-
-.kicker {
-  margin: 0 0 0.4rem;
-  font-family: var(--roman);
-  font-weight: 700;
-  font-size: clamp(0.8rem, 2.6vw, 1rem);
-  letter-spacing: 0.32em;
-  color: var(--bronze);
-}
+.lang a { color: var(--link); }
+.lang a, .links a { display: inline-block; padding: 0.35rem 0.15rem; }
 
 h1 {
   margin: 0;
   font-family: var(--roman);
-  font-weight: 900;
-  font-size: clamp(2.7rem, 11vw, 5.6rem);
+  font-weight: 500;
+  font-size: clamp(2.5rem, 8.4vw, 5.6rem);
   line-height: 1.05;
-  letter-spacing: 0.04em;
-  color: #5a2c0e;
-  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.7), 0 0 32px rgba(255, 236, 190, 0.9);
+  letter-spacing: 0.07em;
+  color: var(--ink);
+  text-shadow: 0 0 2rem rgba(255, 250, 238, 0.95), 0 0 0.6rem rgba(255, 250, 238, 0.9);
 }
 
 .tagline {
-  margin: 0.5rem 0 0.6rem;
+  margin: 0.3rem 0 0;
+  font-family: var(--italic);
   font-style: italic;
-  font-size: clamp(1.7rem, 6vw, 2.6rem);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 4.6vw, 2.5rem);
   line-height: 1.2;
-  color: var(--ink);
+  color: #3a2a1b;
+  text-shadow: 0 0 1.2rem rgba(255, 250, 238, 0.95);
 }
 
-.subtitle { margin: 0 auto 1.1rem; max-width: 28rem; font-style: italic; color: var(--ink-soft); }
+/* ---- The two Tables of the Law ---- */
+
+.tables {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 35rem));
+  justify-content: center;
+  gap: 1.4rem;
+  margin-top: min(-23%, -16rem);
+  padding: 0 1rem 2rem;
+}
+
+/* the light of the summit spilling round the crowns */
+.tables::before {
+  content: "";
+  position: absolute;
+  top: -5rem;
+  left: 50%;
+  width: min(84rem, 160%);
+  height: 30rem;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, rgba(255, 251, 240, 0.5), rgba(255, 246, 226, 0.2) 55%, transparent);
+  pointer-events: none;
+}
+
+/* the slab is drawn in SVG, in three pieces cut from one 600 x 940 drawing and scaled to the tablet's width:
+   the crown and the base keep their shape, the body repeats in between (margins in % follow the width), so the
+   drawing never stretches and costs the same whatever the tablet's height */
+.tablet {
+  position: relative;
+  z-index: 1;
+  background:
+    url("tablet-crown.svg") top / 100% auto no-repeat,
+    url("tablet-base.svg") bottom / 100% auto no-repeat;
+  filter: drop-shadow(0 1.8rem 1.6rem rgba(96, 58, 22, 0.3));
+}
+.tablet::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  margin: 43.333% 0 13.333%;
+  background: url("tablet-body.svg") top / 100% auto repeat-y;
+  /* the crown and the base run under both ends: fading the ends makes the joins dissolve into the stone */
+  mask-image: linear-gradient(transparent, #000 7px, #000 calc(100% - 7px), transparent);
+}
+
+/* the text sits in the sunken field, inside the rim */
+.field {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 4rem 3.4rem 3.4rem;
+  color: var(--carve);
+  text-shadow: var(--incised);
+}
+
+.crown { max-width: 23rem; margin: 0 auto 2rem; text-align: center; }
+
+.kicker {
+  margin: 0 0 0.9rem;
+  font-family: var(--roman);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.34em;
+  color: var(--bronze);
+}
+
+.subtitle {
+  margin: 0;
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.45rem;
+  line-height: 1.3;
+  text-wrap: balance;
+}
 
 .slogan {
-  margin: 0 auto;
-  max-width: 34rem;
+  margin: 0.4rem 0 0;
   font-family: var(--roman);
-  font-size: clamp(0.85rem, 2.6vw, 1.02rem);
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: var(--terracotta);
+  font-weight: 600;
+  font-size: 1.36rem;
+  line-height: 1.42;
+  letter-spacing: 0.08em;
+  text-shadow: var(--incised-deep);
 }
+.slogan span { display: block; text-wrap: balance; }
+.tablet-word .crown { max-width: 21rem; }
 
-.mountain { display: block; width: calc(100% + 2rem); height: clamp(6rem, 18vw, 11rem); margin: 1.8rem -1rem 0; }
-
-/* ---- Sections ---- */
-
-main { max-width: 62rem; margin: 0 auto; padding: 0 1rem 2rem; }
-
-section { margin: 0 auto 4rem; }
-
-h2 {
-  margin: 0 0 1.4rem;
+.field h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 0 0 1.1rem;
+  font-family: var(--roman);
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.3;
+  letter-spacing: 0.16em;
   text-align: center;
+  text-shadow: var(--incised-deep);
+}
+.field h2::before, .field h2::after { content: ""; flex: 1 1 1.2rem; height: 2px; background: var(--rule); }
+
+.field section + section { margin-top: 2.4rem; }
+
+/* ---- Left tablet: the seven laws ---- */
+
+.laws { display: flex; flex: 1; flex-direction: column; }
+.laws h2 { font-size: 1.3rem; }
+
+.laws ol {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.laws li { display: flex; flex: 1; flex-direction: column; justify-content: center; padding: 1.4rem 0; }
+.laws li + li { background: var(--rule) center top / 3.5rem 2px no-repeat; }
+
+.num {
+  display: block;
+  margin: 0 auto 0.35rem;
   font-family: var(--roman);
   font-weight: 700;
-  font-size: clamp(1.6rem, 5vw, 2.2rem);
-  letter-spacing: 0.06em;
-  color: var(--terracotta);
+  font-size: 2.8rem;
+  line-height: 1;
+  color: transparent;
+  background: var(--gilt);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.7));
 }
-h2::before, h2::after { content: "\25C6"; font-size: 0.45em; vertical-align: middle; color: var(--bronze-hi); margin: 0 0.8em; }
 
-.prose { max-width: 40rem; margin: 0 auto; }
-.prose p { margin: 0 0 1rem; }
+.law {
+  display: block;
+  font-family: var(--roman);
+  font-weight: 600;
+  font-size: 1.24rem;
+  line-height: 1.38;
+  letter-spacing: 0.05em;
+  text-wrap: balance;
+  text-shadow: var(--incised-deep);
+}
+
+.gloss-line { display: block; max-width: 25rem; margin: 0.3rem auto 0; color: var(--carve-soft); text-wrap: balance; }
+
+/* ---- Right tablet: the word ---- */
+
+.tablet-word p { margin: 0 0 0.8rem; }
+.tablet-word section > p:not(.gloss), .stele p { text-align: justify; hyphens: auto; }
 
 .lettrine::first-letter {
   float: left;
+  margin: 0.05em 0.1em 0 0;
   font-family: var(--roman);
-  font-weight: 900;
-  font-size: 3.6em;
-  line-height: 0.85;
-  padding: 0.04em 0.12em 0 0;
-  color: var(--terracotta);
+  font-weight: 700;
+  font-size: 3.4em;
+  line-height: 0.82;
+  color: #6a460b;
 }
 
-.proclaim { margin: 1.6rem auto 0; text-align: center; font-family: var(--roman); font-weight: 700; letter-spacing: 0.04em; color: var(--terracotta); }
-
-/* ---- The Tables of the Law, standing on the mountain ---- */
-
-.tables { position: relative; margin-top: clamp(-6rem, -10vw, -3rem); }
-
-.tablets {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 1.6rem;
-  max-width: 56rem;
-  margin: 0 auto;
-}
-
-.tablet {
-  display: flex;
-  flex-direction: column;
-  padding: 5rem 1.6rem 2rem;
-  color: var(--stone-ink);
-  background:
-    radial-gradient(circle at 24% 12%, rgba(255, 255, 255, 0.55), transparent 40%),
-    radial-gradient(circle at 80% 86%, rgba(0, 0, 0, 0.1), transparent 46%),
-    linear-gradient(165deg, var(--stone-hi), var(--stone) 48%, var(--stone-lo));
-  border-radius: 50% 50% 0.7rem 0.7rem / 7.5rem 7.5rem 0.7rem 0.7rem;
-  box-shadow:
-    inset 0 0 0 2px rgba(255, 255, 255, 0.4),
-    inset 0 -10px 22px rgba(0, 0, 0, 0.16),
-    0 24px 50px rgba(90, 50, 15, 0.35),
-    0 0 60px rgba(255, 230, 170, 0.6);
-}
-
-.tablet ol { list-style: none; margin: 0; padding: 0; }
-
-.tablet li {
-  display: grid;
-  grid-template-columns: 3rem 1fr;
-  column-gap: 0.7rem;
-  padding: 0.8rem 0;
-  border-top: 1px solid rgba(60, 50, 35, 0.2);
-}
-.tablet li:first-child { border-top: 0; padding-top: 0; }
-
-.num, .law, .gloss-line { text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65), 0 -1px 0 rgba(0, 0, 0, 0.14); }
-
-.num {
-  grid-row: span 2;
-  align-self: start;
+.steles { display: grid; gap: 0.9rem; margin: 0 0 1rem; }
+.stele h3 {
+  margin: 0;
   font-family: var(--roman);
-  font-weight: 900;
-  font-size: 1.7rem;
-  line-height: 1.15;
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.1em;
+  color: var(--bronze);
+}
+.stele p { margin: 0; }
+
+.gloss {
+  margin: 1.2rem 0 0;
+  padding: 1rem 0.5rem 0;
+  font-family: var(--italic);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.32rem;
+  line-height: 1.38;
   text-align: center;
-  color: var(--carved);
+  background: var(--rule) center top / 5rem 2px no-repeat;
 }
 
-.law { font-family: var(--roman); font-weight: 700; font-size: 1.04rem; line-height: 1.4; letter-spacing: 0.02em; }
+.decree { display: grid; grid-template-columns: auto 1fr; gap: 0.35rem 1rem; align-items: baseline; width: fit-content; margin: 1rem auto 0; }
+.decree dt { font-family: var(--roman); font-weight: 700; font-size: 0.92rem; letter-spacing: 0.1em; color: var(--bronze); text-align: right; }
+.decree dd { margin: 0; text-wrap: balance; font-family: var(--italic); font-style: italic; font-weight: 600; font-size: 1.3rem; line-height: 1.3; }
 
-.gloss-line { font-size: 1.05rem; line-height: 1.45; color: var(--stone-soft); }
+.colophon {
+  margin-top: auto;
+  padding-top: 2.6rem;
+  text-align: center;
+}
+.colophon::before { content: ""; display: block; width: 60%; height: 2px; margin: 0 auto 2rem; background: var(--rule); }
+
+.maxim { margin: 0 0 0.6rem; font-family: var(--roman); font-weight: 600; font-size: 1.02rem; line-height: 1.45; letter-spacing: 0.08em; text-wrap: balance; text-shadow: var(--incised-deep); }
+.colophon .signature { margin: 0; font-family: var(--italic); font-style: italic; font-weight: 600; font-size: 2.1rem; line-height: 1.2; }
 
 .seal {
   display: grid;
   place-items: center;
-  width: 4.6rem;
-  height: 4.6rem;
-  margin: auto auto 0;
+  width: 3.6rem;
+  height: 3.6rem;
+  margin: 0.8rem auto;
   border-radius: 50%;
   font-family: var(--roman);
-  font-weight: 900;
-  font-size: 1.4rem;
-  letter-spacing: 0.06em;
-  color: #fff4dc;
-  background: radial-gradient(circle at 35% 30%, #d9a457, #9c6a2a 58%, #6b4318);
-  box-shadow: 0 3px 8px rgba(60, 35, 10, 0.4), inset 0 -3px 6px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.35);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  color: #fff6df;
+  text-shadow: 0 -1px 0 rgba(60, 36, 6, 0.6);
+  background: radial-gradient(circle at 38% 30%, #e3bd69, #a87522 55%, #6e4a0c);
+  box-shadow: inset 0 0 0 3px rgba(255, 236, 190, 0.35), inset 0 -3px 5px rgba(50, 30, 5, 0.4), 0 2px 3px rgba(60, 40, 15, 0.35);
 }
 
-/* ---- The mechanism: three steles ---- */
+.colophon .date { margin: 0; font-family: var(--roman); font-weight: 600; font-size: 0.8rem; line-height: 1.6; letter-spacing: 0.14em; color: var(--carve-soft); text-wrap: balance; }
 
-.steles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1.3rem;
-  max-width: 56rem;
-  margin: 0 auto 1.6rem;
+/* ---- At the foot of the mountain ---- */
+
+.foot { max-width: 46rem; margin: 0 auto; padding: 1.6rem 1rem 3rem; text-align: center; color: var(--ink-soft); }
+.links { margin: 0 0 0.6rem; font-size: 1.05rem; text-wrap: balance; }
+.links [aria-current] { color: var(--ink); }
+.fine { margin: 0; font-size: 0.95rem; text-wrap: balance; }
+
+/* ---- One tablet after the other on narrow screens ---- */
+
+@media (max-width: 60rem) {
+  .tables { grid-template-columns: minmax(0, 35rem); gap: 2.4rem; }
 }
-
-.stele {
-  padding: 1.4rem 1.3rem 1.5rem;
-  text-align: center;
-  background: linear-gradient(#f6ead2, #ecdab6);
-  border: 1px solid #cfa86e;
-  border-top: 4px solid var(--terracotta);
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 24px rgba(90, 50, 15, 0.14);
-}
-.stele h3 { margin: 0 0 0.5rem; font-family: var(--roman); font-weight: 700; font-size: 1.05rem; letter-spacing: 0.05em; color: var(--terracotta); }
-.stele p { margin: 0; font-size: 1.08rem; line-height: 1.5; }
-
-/* ---- The call ---- */
-
-.decree { max-width: 34rem; margin: 1.4rem auto 0; display: grid; grid-template-columns: auto 1fr; gap: 0.6rem 1.2rem; align-items: baseline; }
-.decree dt { font-family: var(--roman); font-weight: 700; letter-spacing: 0.06em; color: var(--terracotta); text-align: right; }
-.decree dd { margin: 0; }
-
-/* ---- Colophon ---- */
-
-.colophon { max-width: 40rem; margin: 0 auto; padding: 2.4rem 1rem 3rem; text-align: center; border-top: 1px solid rgba(138, 58, 23, 0.35); }
-.maxim { margin: 0 0 1rem; font-family: var(--roman); font-weight: 700; font-size: 1.15rem; letter-spacing: 0.03em; color: var(--terracotta); }
-.signature { margin: 0; font-style: italic; font-size: 2rem; color: var(--ink); }
-.date { margin: 0.2rem 0 1.6rem; font-family: var(--roman); font-size: 0.85rem; letter-spacing: 0.12em; color: var(--ink-soft); }
-.links { margin: 0 0 1rem; }
-.fine { margin: 0; font-size: 0.95rem; color: var(--ink-soft); }
 
 @media (max-width: 30rem) {
-  body { font-size: 1.1rem; }
-  .tablet { padding: 4.4rem 1.2rem 1.8rem; }
-  .decree { grid-template-columns: 1fr; gap: 0.1rem; }
-  .decree dt { text-align: left; margin-top: 0.6rem; }
+  body { font-size: 1.0625rem; }
+  .lang { text-align: center; margin-bottom: 1rem; }
+  .tables { margin-top: -13.5rem; padding: 0 1rem 1.5rem; }
+  .field { padding: 4.6rem 2.4rem 2.6rem 2.2rem; }
+  .kicker { font-size: 0.78rem; letter-spacing: 0.16em; }
+  .crown { max-width: 17rem; margin-bottom: 1.4rem; }
+  .tablet-word .crown { max-width: 15rem; }
+  .subtitle { font-size: 1.3rem; }
+  .slogan { font-size: 1.08rem; }
+  .field h2 { display: block; padding-bottom: 0.7rem; font-size: 1rem; letter-spacing: 0.12em; text-wrap: balance; background: var(--rule) center bottom / 3.5rem 2px no-repeat; }
+  .field h2::before, .field h2::after { content: none; }
+  .laws h2 { font-size: 1.1rem; }
+  .law { font-size: 1.05rem; }
+  .tablet-word section > p:not(.gloss), .stele p { text-align: left; }
+  .decree { grid-template-columns: 1fr; gap: 0; text-align: center; }
+  .decree dt { text-align: center; margin-top: 0.6rem; }
 }

@@ -28,6 +28,12 @@ au bas d'un contrat. Une empreinte digitale sur ce que l'on écrit.
 6. **Ouvert** : vérifiable par tous, sans plateforme.
 7. **Une preuve d'humanité n'est pas un droit** : elle ne donne aucune autorité sur la machine de celui qui lit.
 
+## Au-delà du clavier
+
+Souris, caméra, micro : chaque capteur peut signer ce qu'il capte, avec sa propre détection du vivant. Leur limite
+commune : ce qu'on rejoue devant le capteur, un écran ou un haut-parleur, passe pour du réel. Le clavier y échappe
+mieux, il faut un doigt sur la touche. On commence donc par lui.
+
 ## L'appel
 
 Toutes les tentatives passées sont tombées sur la vie privée. Si la preuve d'humanité devient obligatoire,
