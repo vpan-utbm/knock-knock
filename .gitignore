@@ -1,0 +1,15 @@
+# Windows and editors
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Python (tools/gen_pages.py, tools/make_art.py)
+__pycache__/
+*.pyc
+
+# Local Claude Code settings of one person
+.claude/settings.local.json
+CLAUDE.local.md
