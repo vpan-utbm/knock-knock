@@ -45,4 +45,6 @@ Manufacturers, build it. Platforms, accept anonymity. Legislators, protect those
 
 — *Human After All*, 13 November 2026
 
+*Written with the help of an AI, and that is precisely why this keyboard is needed.*
+
 *Full version, limits and references: [MANIFESTO.md](MANIFESTO.md)*

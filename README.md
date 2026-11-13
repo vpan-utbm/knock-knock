@@ -55,4 +55,4 @@ The page has no script, no cookie, and loads nothing from elsewhere.
 
 ---
 
-<p align="center"><b>Ideas belong to those who bring them to life.</b><br><i>Les idées appartiennent à ceux qui les réalisent.</i><br><br>— Human After All</p>
+<p align="center"><b>Ideas belong to those who bring them to life.</b><br><i>Les idées appartiennent à ceux qui les réalisent.</i><br><br>— Human After All<br><br><i>Written with the help of an AI, and that is precisely why this keyboard is needed.</i><br><i>Écrit avec l'aide d'une IA, et c'est justement pour ça qu'il faut ce clavier.</i></p>

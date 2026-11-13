@@ -6,6 +6,8 @@
 
 13 November 2026 — by **Human After All**
 
+*Written with the help of an AI, and that is precisely why this keyboard is needed.*
+
 ---
 
 ## 1. The observation

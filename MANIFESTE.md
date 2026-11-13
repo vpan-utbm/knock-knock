@@ -6,6 +6,8 @@
 
 13 novembre 2026 — par **Human After All**
 
+*Écrit avec l'aide d'une IA, et c'est justement pour ça qu'il faut ce clavier.*
+
 ---
 
 ## 1. Le constat

@@ -46,4 +46,6 @@ taper.
 
 — *Human After All*, 13 novembre 2026
 
+*Écrit avec l'aide d'une IA, et c'est justement pour ça qu'il faut ce clavier.*
+
 *Version longue, limites et références : [MANIFESTE.md](MANIFESTE.md)*

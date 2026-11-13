@@ -54,6 +54,7 @@ FR = dict(
             ("Législateurs", "protégez ceux qui ne peuvent pas taper.")],
     maxim="Les idées appartiennent à ceux qui les réalisent.",
     date="Donné sur la montagne, le treizième jour de novembre MMXXVI",
+    aveu="Écrit avec l’aide d’une IA, et c’est justement pour ça qu’il faut ce clavier.",
     full=("Le manifeste complet", f"{REPO}/blob/main/MANIFESTE.md"),
     source=("Le dépôt", REPO),
     fine="Texte sous licence CC BY 4.0, polices sous licence SIL OFL 1.1. Cette page n’a aucun script, aucun "
@@ -107,6 +108,7 @@ EN = dict(
             ("Legislators", "protect those who cannot type.")],
     maxim="Ideas belong to those who bring them to life.",
     date="Given upon the mountain, this thirteenth day of November, MMXXVI",
+    aveu="Written with the help of an AI, and that is precisely why this keyboard is needed.",
     full=("The full manifesto", f"{REPO}/blob/main/MANIFESTO.md"),
     source=("The repository", REPO),
     fine="Text licensed under CC BY 4.0, fonts under the SIL OFL 1.1. This page has no script, no cookie, and "
@@ -207,6 +209,7 @@ def page(t):
           <p class="signature">Human After All</p>
           <div class="seal" aria-hidden="true">HP</div>
           <p class="date">{e(t['date'])}</p>
+          <p class="aveu">{e(t['aveu'])}</p>
         </div>
       </div>
     </div>
