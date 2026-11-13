@@ -186,8 +186,9 @@ This manifesto claims nothing. **Ideas belong to those who bring them to life.**
 - Regulation (EU) 2024/1689 on artificial intelligence (AI Act), Article 14 (human oversight) and
   Article 50 (marking of AI-generated content):
   https://eur-lex.europa.eu/eli/reg/2024/1689/oj
-- V. S. Sadasivan et al., *Can AI-Generated Text be Reliably Detected?* (arXiv, 2023), paraphrasing against
-  watermarks: https://arxiv.org/abs/2303.11156
+- V. S. Sadasivan et al., *Can AI-Generated Text be Reliably Detected? Stress Testing AI Text Detectors Under
+  Various Attacks*, Transactions on Machine Learning Research (TMLR), 2025, paraphrasing against watermarks:
+  https://openreview.net/forum?id=OOgsAZdFOt (preprint: https://arxiv.org/abs/2303.11156)
 - J. Postel, *Simple Mail Transfer Protocol*, RFC 821 (1982): https://www.rfc-editor.org/rfc/rfc821
 - *DomainKeys Identified Mail (DKIM) Signatures*, RFC 4871 (2007): https://www.rfc-editor.org/rfc/rfc4871
 - *Domain-based Message Authentication, Reporting, and Conformance (DMARC)*, RFC 7489 (2015):

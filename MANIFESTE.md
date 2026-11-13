@@ -192,8 +192,9 @@ Ce manifeste ne revendique rien. **Les idées appartiennent à ceux qui les réa
 - Règlement (UE) 2024/1689 sur l'intelligence artificielle (AI Act), article 14 (contrôle humain) et
   article 50 (marquage des contenus générés par l'IA) :
   https://eur-lex.europa.eu/eli/reg/2024/1689/oj
-- V. S. Sadasivan et al., *Can AI-Generated Text be Reliably Detected?* (arXiv, 2023), la reformulation
-  contre le marquage : https://arxiv.org/abs/2303.11156
+- V. S. Sadasivan et al., *Can AI-Generated Text be Reliably Detected? Stress Testing AI Text Detectors Under
+  Various Attacks*, Transactions on Machine Learning Research (TMLR), 2025, la reformulation contre le
+  marquage : https://openreview.net/forum?id=OOgsAZdFOt (prépublication : https://arxiv.org/abs/2303.11156)
 - J. Postel, *Simple Mail Transfer Protocol*, RFC 821 (1982) : https://www.rfc-editor.org/rfc/rfc821
 - *DomainKeys Identified Mail (DKIM) Signatures*, RFC 4871 (2007) : https://www.rfc-editor.org/rfc/rfc4871
 - *Domain-based Message Authentication, Reporting, and Conformance (DMARC)*, RFC 7489 (2015) :
